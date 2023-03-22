@@ -1,3 +1,19 @@
-hkshdl;asm
-hasa
-sac
+    1  yum update -y
+    2  sudo amazon-linux-extras install java-openjdk11 -y
+    3  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    4  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    5  sudo yum install jenkins -y
+    6  sudo systemctl enable jenkins
+    7  sudo systemctl start jenkins
+    8  cat /var/lib/jenkins/secrets/initialAdminPassword
+    9  yum install git -y
+   10  which git
+   11  mkdir gitdir
+   12  cd gitdir/
+   13  git init
+   14  git config --global user.name rahul
+   15  git config --global user.email rahul@gamil.com
+       git add filename
+       git commit -m "commit message"
+       git remote add origin repository_path
+       git push origin master
