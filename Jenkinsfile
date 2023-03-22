@@ -1,8 +1,8 @@
 pipeline { 
         agent {
     node {
-        label 'Built-In'
-        customWorkspace '/home/ec2-user/git/github-jenkins/'
+        label "built-in"
+        customWorkspace "/home/ec2-user/git/github-jenkins/"
     }
 }
 
